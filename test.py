@@ -112,15 +112,18 @@ def scroll_map(cube_list):
         for j in range(7):
             cube_list[i].point[j][1] += 30
 
+
 def draw_score():
-    score = pygame.font.SysFont('Ariel',40)
+    score = pygame.font.SysFont('Ariel', 40)
     text_score = score.render("Score : " + str(len(cube_list) - 1), True, color_white)
-    screen.blit(text_score,[20,20])
+    screen.blit(text_score, [20, 20])
+
 
 def draw_mesaage():
-    gameover = pygame.font.SysFont('Ariel', 100)
-    text_gameover = gameover.render("GAME OVER", True, (255,0,0))
-    screen.blit(text_gameover,[100,300])
+    game_Over = pygame.font.SysFont('Ariel', 100)
+    text_gameover = game_Over.render("GAME OVER", True, (255, 0, 0))
+    screen.blit(text_gameover, [100, 300])
+
 
 pygame.init()
 
